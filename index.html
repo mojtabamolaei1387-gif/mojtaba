@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <title>کاهش کیفیت عکس</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>کاهش کیفیت عکس</h1>
+    <input type="file" id="upload" accept="image/*">
+    <label for="quality">درصد کیفیت:</label>
+    <input type="range" id="quality" min="10" max="100" value="70">
+    <span id="qualityValue">70%</span>
+    <canvas id="canvas" style="display:none;"></canvas>
+    <button id="compressBtn">فشرده‌سازی</button>
+    <a id="downloadLink" style="display:none;">دانلود عکس</a>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
